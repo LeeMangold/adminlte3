@@ -1,0 +1,21 @@
+name: AdminLTE3
+description: 'Drupal 10 admin theme based on AdminLTE by LVM'
+base theme: classy
+package: Custom
+type: theme
+# version: 1.0.0
+core_version_requirement: ^10
+libraries:
+  - adminlte3/base
+regions:
+  brand: Site Branding
+  header: Header
+  top: Top
+  content: Content
+  bottom: Bottom
+  sidebar: Sidebar
+  footer: Footer
+  navbar_right_notifications: Navbar Right Notifications
+features:
+  - favicon
+  - logo
