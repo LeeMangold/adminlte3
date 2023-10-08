@@ -1,0 +1,13 @@
+{
+    "name": "LeeMangold/adminlte3",
+    "description": "AdminLTE.io 3 theme in Drupal",
+    "type": "drupal-theme",
+    "require": {
+        "composer/installers": "^1.9"
+    },
+    "extra": {
+        "installer-paths": {
+            "themes/contrib/{$name}/": ["type:drupal-theme"]
+        }
+    }
+}
