@@ -31,7 +31,7 @@ function adminlte3_preprocess_page(&$variables) {
         $picture = $picture->createFileUrl($file->getFileUri());
       }
       else {
-        $picture = "/themes/adminlte3/dist/img/avatar5.png";
+        $picture = "/themes/contrib/adminlte3/dist/img/avatar5.png";
       }
     }
   }
@@ -41,7 +41,7 @@ function adminlte3_preprocess_page(&$variables) {
   $variables['user']['picture'] = $picture;
   $variables['user']['created'] = $user->getCreatedtime();
 
-  $logo_url = empty(theme_get_setting('logo.url')) ? '/themes/adminlte3/logo.svg' : theme_get_setting('logo.url');
+  $logo_url = empty(theme_get_setting('logo.url')) ? '/themes/contrib/adminlte3/logo.svg' : theme_get_setting('logo.url');
   //  $variables['relative_logo_url'] = file_url_transform_relative(file_create_url($logo_url));
 
   // Get the absolute URL.
@@ -54,9 +54,9 @@ function adminlte3_preprocess_page(&$variables) {
   // Transform it to a relative URL.
   $variables['relative_logo_url'] = str_replace($base_url, '', $absolute_url);
 
-  $logo_url = empty(theme_get_setting('logo.url')) ? '/themes/adminlte3/logo.svg' : theme_get_setting('logo.url');
+  $logo_url = empty(theme_get_setting('logo.url')) ? '/themes/contrib/adminlte3/logo.svg' : theme_get_setting('logo.url');
   $variables['logo_url'] = $logo_url;
-  $variables['image_path'] = '/themes/adminlte3/dist/img';
+  $variables['image_path'] = '/themes/contrib/adminlte3/dist/img';
 }
 
 function adminlte3_preprocess_block(&$variables) {
