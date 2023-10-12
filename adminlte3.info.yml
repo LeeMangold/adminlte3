@@ -16,6 +16,7 @@ regions:
   sidebar: Sidebar
   footer: Footer
   navbar_right_notifications: Navbar Right Notifications
+  sidebar_right: Right Sidebar in Content area
 features:
   - favicon
   - logo
