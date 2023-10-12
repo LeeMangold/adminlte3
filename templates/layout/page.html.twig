@@ -185,30 +185,24 @@
     </div><!-- /.container-fluid -->
   </section>
   <section class="content">
-
-    <div class="row">
-      {% if page.sidebar_right %}
-        <div class="col-10">
-          {{ page.content }}
-        </div>
-        <div class="col-2">
-          {{ page.sidebar_right }}
-        </div>
-      {% else %}
-        <div class="col-12">
-          {{ page.content }}
-        </div>
-      {% endif %}
-    </div>
-
-
     <div class="card">
       <div class="card-body">
-
+        <div class="row">
+          {% if page.sidebar_right %}
+            <div class="col-10">
+              {{ page.content }}
+            </div>
+            <div class="col-2">
+              {{ page.sidebar_right }}
+            </div>
+          {% else %}
+            <div class="col-12">
+              {{ page.content }}
+            </div>
+          {% endif %}
+        </div>
       </div>
     </div>
-
-
   </section>
 </div>
 
